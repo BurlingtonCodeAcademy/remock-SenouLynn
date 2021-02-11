@@ -1,0 +1,298 @@
+/*Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 350;
+    letter-spacing: .2em;
+    line-height: 1.2;
+    
+}
+
+html {
+    font-size: .75rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* Base Styling */
+
+h1 {
+    /*Only one use per page*/
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 2px grey;
+    border: 2px black;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+h3 {
+    /* Used as headers for articles*/
+    font-size: 2rem;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+h4 {
+    font-size: 1.75rem;
+    padding: 20px 0px 20px 0px;
+    line-height: 1.6;
+}
+
+h5 {
+    font-size: 1.25rem;
+    padding: 20px 0px 20px 0px;
+    line-height: 1.6;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+
+.bold {
+    font-weight: 400;
+}
+
+article{
+    margin-top: 10px;
+}
+
+/*Button*/
+
+.button-pink {
+    background-color: tomato;
+    padding: 8px 15px 8px 15px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 2px 2px grey;
+    
+}
+button:hover {
+    background-color: rgb(255, 139, 119);
+}
+
+button a {
+    color: white;
+    font-weight: 700;
+}
+
+/*This one specifically targets the form button*/
+button {
+    color: white;
+    font-weight: 600;
+}
+
+#footer-form .button-pink i {
+    padding-right: 10px
+}
+
+.button-grey {
+    background-color: grey;
+    padding: 8px 15px 8px 15px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Icon */
+
+.fa-file {
+    color: white;
+}
+
+/*Header*/
+#header {
+    padding-left: 175px;
+    padding-right: 175px;
+    margin: 30px;
+    text-align: center;
+}
+
+#header h1 {
+    padding: 15px;
+    color: tomato;
+    letter-spacing: 3px;
+}
+
+#header h5 {
+    padding: 20px 0px 50px 0px;
+}
+
+.line-break{
+    margin-top: 25px;
+    margin-bottom: 25pxpx
+}
+
+.line-break-2{
+    margin: 10px 0px 10px 0px;
+}
+hr {
+    text-align: center;
+    margin:2px
+    }
+
+/*Features*/
+#features {
+    padding-left: 175px;
+    padding-right: 175px;
+    padding: 20px;
+    text-align: center;
+}
+
+#features h5{
+    text-align: center;
+    padding: 30px;
+
+}
+
+/*Features*/
+#features .flex-box {
+    padding-left: 175px;
+    padding-right: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+#features h5 {
+    padding-bottom: 20px ;
+}
+
+#features h6 {
+    padding: 20px;
+}
+
+
+.flex-box div {
+    padding: 20px;
+}
+.flex-box div img {
+    width: 225px;
+    height: 175px;
+    object-fit: cover;
+
+}
+
+
+/*Page Break*/
+
+.page-break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-image: url("/projects/remock-SenouLynn/Pictures/page-break.jpg");
+}
+
+.page-break h2 {
+    color: white;
+}
+
+/*Main Page*/
+
+#main-page {
+    padding: 50px 175px 50px 175px;
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:20px;
+}
+
+.main-grid-left article img {
+    width:100%;
+}
+
+#main-page p {
+    padding-bottom: 30px;
+}
+
+.learn-pic{
+    object-fit: cover;
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/*Footer*/
+
+#footer {
+    background-color: rgb(213, 210, 210)
+}
+
+.footer-container {
+    padding: 0px 175px 50px 175px;
+}
+
+#footer h3 {
+    text-align: center;
+    padding-top: 50px
+}
+
+/*Footer Form*/
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+}
+
+.form-wrap-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.form-wrap-1 #name, #email{
+    width: 50%
+}
+
+.form-wrap-1 #name {
+    margin-right: 10px;
+}
+.form-wrap-2 {
+    display: block;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+}
+
+.form-wrap-2 textarea{
+    width: 100%;
+    height: 150px
+}
+
+/*Footer Icons*/
+#footer .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer .contact {
+    width: 100%
+}
+#footer section {
+    margin-top: 15px;
+}
+.icon-flex{
+    display:flex;
+    justify-content: flex-start;
+    }
+
+#footer .icon-flex {
+    padding-top: 20px
+}
+#footer i {
+    padding-right: 10px;
+
+}
+
+
