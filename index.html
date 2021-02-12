@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Big Jim's Travle Blog</title>
+    <title>Big Jim's Landing Pages</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="CSS/remock.css">
+    <link rel="stylesheet" href="css/remock.css">
     <!--Text Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
    
       <!---Header-->
     <section id="header">
-      <h1>BIG JIM'S TRAVLES</h1>
+      <a href="/index.html"><h1>BIG JIM'S BEE BLOG</h1></a>
       <h5>FOLLOW ALONG FOR SOME FUCKING FUN</h5>
       <hr>
       <hr>
@@ -49,7 +49,7 @@
       <!--Learn More Button-->
       <button class="button-pink">
             <i class="far fa-file"></i>
-            <a href="">More. MOOOOOOORE.</a>
+            <a href="/learn-more.html">More. MOOOOOOORE.</a>
         </button>
     </section>
 
@@ -133,7 +133,7 @@
               </p>
               <button class="button-pink">
                 <i class="far fa-file"></i>
-                <a href="">CONTINUE READING...</a>
+                <a href="/continuereading.html">CONTINUE READING...</a>
               </button>
             </article>
 
@@ -256,19 +256,19 @@
                 </p>
               <button class="button-pink">
                 <i class="far fa-file"></i>
-                <a href="">CONTNUE READING</a>
+                <a href="/continuereading.html">CONTNUE READING</a>
               </button>
             </article>
           </div>
           
-          <!--Blog Article Small-->
+          <!--Side Bar-->
           <div>
-            <!--Blog One-->
+            <!--Side Bar Top 1-->
             <article>
               <button class="button-grey">
                 <i class="far fa-file"></i>
                 <a>April 20th</a></button>
-              <h5>BEES ARE <span class="bold">DYING</span></h5>
+              <a class="link-decoration" href="/blogpost.html"><h5>BEES ARE <span class="bold">DYING</span></h5></a>
               <p>And begins your career
                 at Honex Industries!
                 
@@ -297,12 +297,12 @@
 
             <hr class="line-break-2">
 
-            <!--Blog Two-->
+            <!--Side Bar Top 2-->
             <article>
               <button class="button-grey">
                 <i class="far fa-file"></i>
                 <a>June 1st</a></button>
-              <h5>AT <span class="bold">ALARMING</span> RATES</h5>
+              <a class="link-decoration" href="/blogpost.html"><h5>AT <span class="bold">ALARMING</span> RATES</h5></a>
               <p>Oan anyone work on the Krelman?
 
   
@@ -324,12 +324,12 @@
 
             <hr class="line-break-2">
 
-            <!--Blog Three-->
+            <!--Side Bar Top 3-->
             <article>
               <button class="button-grey">
                 <i class="far fa-file"></i>
                 <a>Dec 7th</a></button>
-              <h5>TIG <span class="bold">OL'</span>BIDDIES</h5>
+              <a class="link-decoration" href="/blogpost.html"><h5>TIG <span class="bold">OL'</span>BIDDIES</h5></a>
               <p>That girl was hot.
                 - She's my cousin!
                 
@@ -390,7 +390,7 @@
               </div>
                 <button class="button-pink">
                   <i class="far fa-file"></i>
-                  <a>LEARN MORE</a></button>
+                  <a href="/learn-more.html">LEARN MORE</a></button>
             </article>
 
             <hr class="line-break-2">
@@ -423,14 +423,13 @@
               </div>
                 <button class="button-pink">
                   <i class="far fa-file"></i>
-                  <a>LEARN MORE</a>
+                  <a href="/learn-more.html">LEARN MORE</a>
                 </button>
             </article>
           </div>
         </div>
       </section>
-  
-  
+    
       <!--Footer-->
       <section id="footer">
       <div class="footer-container">
@@ -438,16 +437,17 @@
 
         <!--Form on the Left Side-->
         <div class="form-grid">
-            <form id="footer-form">
+            <form id="footer-form" onSubmit="return confirm(`You clicked 'submit'. Is all the information correct?`)">
               
                 <div class="form-wrap-1">
                   <input type="text" id="name" name="name" placeholder="What's Yo NAME BOI">
                   <input type="email" id="email" name="email" placeholder="Email">
                 </div>  
+                
                 <div class="form-wrap-2">
-                  <textarea name="message" form="footer-form">Message</textarea>
+                  <textarea name="message" form="footer-form" placeholder="Message"></textarea>
                 </div>
-                <button class="button-pink" type="submit" form="footer-form" value="submit"><i class="far fa-envelope-open"></i>Submit, Peasant!</button>
+                <button class="button-pink " type="submit" form="footer-form" value="submit"><i class="far fa-envelope-open"></i>Submit, Peasant!</button>
 
   
             </form>  
@@ -461,8 +461,10 @@
                 <!--Contact Info-->
                 <div  class="contact">
                   <div class="icon-flex">
-                    <i class="fas fa-house-user fa-2x"></i>
-                    <p>123 Road Road, City Place 1234</p>
+                    <a href="https://www.google.com/maps/dir//Chuck+E.+Cheese,+601+Troy+Schenectady+Rd,+Latham,+NY+12110/@41.7272364,-73.5778877,8z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89de0dc68bd80c73:0xd424ef525b2294bf!2m2!1d-73.7667591!2d42.7542438!3e0"><i class="fas fa-house-user fa-2x"></i></a>
+                    <p>123 Road Road<br>
+                    Bee Hive City <br>
+                    12345s</p>
                   </div>
 
                   <div class="icon-flex">
@@ -471,30 +473,30 @@
                   </div>
 
                   <div class="icon-flex">
-                    <i class="fas fa-envelope fa-2x"></i>
-                    <p>yomamasougly@ugnasty.com</p>
+                    <a href="gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                    <p>email@email.com</p>
                   </div>
               </div>
                 
                 <!--Socials-->
-                <div>
+                <div class="socials">
                   <div class="icon-flex">
-                    <i class="fab fa-twitter fa-2x"></i>
+                    <a href="twitter.com/Wendys"><i class="fab fa-twitter fa-2x"></i></a>
                     <p>Twonter.com</p>
                   </div>
 
                   <div class="icon-flex">
-                    <i class="fab fa-instagram fa-2x"></i>
+                    <a href="https://www.instagram.com/explore/tags/farts/?hl=en"><i class="fab fa-instagram fa-2x"></i></a>
                     <p>Instaface.com</p>
                   </div>
 
                   <div class="icon-flex">
-                    <i class="fas fa-basketball-ball fa-2x"></i>
+                    <a href="https://dribbble.com/shots/4256554-YO-MAMA"><i class="fas fa-basketball-ball fa-2x"></i></a>
                     <p>Drooobble.com</p>
                   </div>
 
                   <div class="icon-flex">
-                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <a href="www.facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a>
                     <p>Fakebook.com</p>
                   </div>
               </div>

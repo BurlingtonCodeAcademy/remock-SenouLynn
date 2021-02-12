@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-weight: 350;
+    font-weight: 300;
     letter-spacing: .2em;
     line-height: 1.2;
     
@@ -18,8 +18,8 @@ a:link {
     text-decoration: none;
 }
 
-/* Base Styling */
 
+/* Base Styling */
 h1 {
     /*Only one use per page*/
     font-size: 3rem;
@@ -47,9 +47,12 @@ h4 {
 }
 
 h5 {
+    /*used as subheadings for articles*/
     font-size: 1.25rem;
     padding: 20px 0px 20px 0px;
     line-height: 1.6;
+    font-weight: 400;
+
 }
 
 h6 {
@@ -73,10 +76,13 @@ article{
     border-radius: 2px;
     border: none;
     box-shadow: 2px 2px grey;
+    transition: background-color, padding;
+    transition-duration: .5s;
     
 }
 button:hover {
     background-color: rgb(255, 139, 119);
+    padding: 10px 17px 10px 17px;
 }
 
 button a {
@@ -99,7 +105,12 @@ button {
     padding: 8px 15px 8px 15px;
     border-radius: 4px;
     border: none;
+
+    transition: background-color, padding;
+    transition-duration: .5s;
 }
+
+
 
 /* Icon */
 
@@ -109,8 +120,8 @@ button {
 
 /*Header*/
 #header {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 150px;
+    padding-right: 150px;
     margin: 30px;
     text-align: center;
 }
@@ -127,7 +138,7 @@ button {
 
 .line-break{
     margin-top: 25px;
-    margin-bottom: 25pxpx
+    margin-bottom: 25px;
 }
 
 .line-break-2{
@@ -135,13 +146,14 @@ button {
 }
 hr {
     text-align: center;
-    margin:2px
+    margin-top:2px;
+    width: 100%;
     }
 
 /*Features*/
 #features {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding: 20px;
     text-align: center;
 }
@@ -154,8 +166,8 @@ hr {
 
 /*Features*/
 #features .flex-box {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 150px;
+    padding-right: 150px;
     display: flex;
     justify-content: center;
 }
@@ -174,7 +186,7 @@ hr {
 }
 .flex-box div img {
     width: 225px;
-    height: 175px;
+    height: 150px;
     object-fit: cover;
 
 }
@@ -187,7 +199,7 @@ hr {
     justify-content: center;
     align-items: center;
     height: 45vh;
-    background-image: url("/projects/remock-SenouLynn/Pictures/page-break.jpg");
+    background-image: url("/Pictures/page-break.jpg");
 }
 
 .page-break h2 {
@@ -197,7 +209,7 @@ hr {
 /*Main Page*/
 
 #main-page {
-    padding: 50px 175px 50px 175px;
+    padding: 0px 150px 50px 150px;
 
 }
 
@@ -221,7 +233,16 @@ hr {
     height: 100px;
     width: 100px;
     padding-right: 15px;
-    padding-left: 15px;
+    
+}
+
+.link-decoration{
+    color: black;
+    transition: color .5s;
+}
+
+.link-decoration:hover {
+    color: rgb(255, 139, 119);
 }
 
 
@@ -232,7 +253,7 @@ hr {
 }
 
 .footer-container {
-    padding: 0px 175px 50px 175px;
+    padding: 0px 150px 50px 150px;
 }
 
 #footer h3 {
@@ -246,14 +267,30 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:20px;
+    grid-template-areas: "form contact"
 }
+
+#footer-form{
+    grid-area: form;
+}
+
 
 .form-wrap-1 {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .form-wrap-1 #name, #email{
     width: 50%
+    
+}
+
+
+#name:hover,
+#email:hover,
+textarea:hover {
+       background-color: rgb(205, 204, 204);
+       opacity: .9;
 }
 
 .form-wrap-1 #name {
@@ -267,7 +304,7 @@ hr {
 
 .form-wrap-2 textarea{
     width: 100%;
-    height: 150px
+    height: 180px
 }
 
 /*Footer Icons*/
@@ -292,7 +329,31 @@ hr {
 }
 #footer i {
     padding-right: 10px;
+    color: gray;
+    transition: color;
+    transition-duration: .5s;
 
+}
+
+#footer i:hover {
+    color:rgb(73, 73, 73);
+}
+
+
+
+/* Continue Reading Page */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:20px;
+
+}
+
+
+/* Blog Post Page */
+.blog-page-top {
+    text-align: center;
 }
 
 
