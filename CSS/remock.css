@@ -59,6 +59,15 @@ h6 {
     font-size: 1rem;
 }
 
+.max-width {
+    display: flex;
+    justify-content: center;
+}
+
+.max-width > div {
+    max-width: 1400px;
+}
+
 
 .bold {
     font-weight: 400;
